@@ -1,0 +1,168 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "04/15/2019 10:06:51"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          lab7
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module lab7_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg C0;
+reg x0;
+reg x1;
+reg x2;
+reg x3;
+reg y0;
+reg y1;
+reg y2;
+reg y3;
+// wires                                               
+wire C3;
+wire S0;
+wire S1;
+wire S2;
+wire S3;
+wire S4;
+
+// assign statements (if any)                          
+lab7 i1 (
+// port map - connection between master ports and signals/registers   
+	.C0(C0),
+	.C3(C3),
+	.S0(S0),
+	.S1(S1),
+	.S2(S2),
+	.S3(S3),
+	.S4(S4),
+	.x0(x0),
+	.x1(x1),
+	.x2(x2),
+	.x3(x3),
+	.y0(y0),
+	.y1(y1),
+	.y2(y2),
+	.y3(y3)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// C0
+initial
+begin
+	C0 = 1'b0;
+	C0 = #512000 1'b1;
+end 
+
+// x3
+initial
+begin
+	repeat(31)
+	begin
+		x3 = 1'b0;
+		x3 = #16000 1'b1;
+		# 16000;
+	end
+	x3 = 1'b0;
+end 
+
+// x2
+initial
+begin
+	repeat(62)
+	begin
+		x2 = 1'b0;
+		x2 = #8000 1'b1;
+		# 8000;
+	end
+	x2 = 1'b0;
+end 
+
+// x1
+always
+begin
+	x1 = 1'b0;
+	x1 = #4000 1'b1;
+	#4000;
+end 
+
+// x0
+always
+begin
+	x0 = 1'b0;
+	x0 = #2000 1'b1;
+	#2000;
+end 
+
+// y3
+initial
+begin
+	y3 = 1'b0;
+	y3 = #256000 1'b1;
+	y3 = #256000 1'b0;
+	y3 = #256000 1'b1;
+end 
+
+// y2
+initial
+begin
+	repeat(3)
+	begin
+		y2 = 1'b0;
+		y2 = #128000 1'b1;
+		# 128000;
+	end
+	y2 = 1'b0;
+	y2 = #128000 1'b1;
+end 
+
+// y1
+initial
+begin
+	repeat(7)
+	begin
+		y1 = 1'b0;
+		y1 = #64000 1'b1;
+		# 64000;
+	end
+	y1 = 1'b0;
+	y1 = #64000 1'b1;
+end 
+
+// y0
+initial
+begin
+	repeat(15)
+	begin
+		y0 = 1'b0;
+		y0 = #32000 1'b1;
+		# 32000;
+	end
+	y0 = 1'b0;
+	y0 = #32000 1'b1;
+end 
+endmodule
+

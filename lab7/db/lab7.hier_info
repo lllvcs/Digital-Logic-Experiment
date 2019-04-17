@@ -1,0 +1,74 @@
+|lab7
+S0 <= plus:inst.S
+C0 => plus:inst.Cin
+C0 => inst111.IN1
+C0 => inst122.IN2
+C0 => inst133.IN3
+C0 => inst145.IN1
+x0 => plus:inst.x
+y0 => plus:inst.y
+S1 <= plus:inst1.S
+x1 => plus:inst1.x
+y1 => plus:inst1.y
+S2 <= plus:inst2.S
+x2 => plus:inst2.x
+y2 => plus:inst2.y
+S3 <= plus:inst3.S
+x3 => plus:inst3.x
+y3 => plus:inst3.y
+C3 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|plus:inst
+S <= inst111.DB_MAX_OUTPUT_PORT_TYPE
+x => inst5.IN0
+x => inst.IN1
+y => inst5.IN1
+y => inst.IN0
+Cin => inst111.IN1
+Cin => inst1.IN0
+G <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+P <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|plus:inst1
+S <= inst111.DB_MAX_OUTPUT_PORT_TYPE
+x => inst5.IN0
+x => inst.IN1
+y => inst5.IN1
+y => inst.IN0
+Cin => inst111.IN1
+Cin => inst1.IN0
+G <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+P <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|plus:inst2
+S <= inst111.DB_MAX_OUTPUT_PORT_TYPE
+x => inst5.IN0
+x => inst.IN1
+y => inst5.IN1
+y => inst.IN0
+Cin => inst111.IN1
+Cin => inst1.IN0
+G <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+P <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|plus:inst3
+S <= inst111.DB_MAX_OUTPUT_PORT_TYPE
+x => inst5.IN0
+x => inst.IN1
+y => inst5.IN1
+y => inst.IN0
+Cin => inst111.IN1
+Cin => inst1.IN0
+G <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+P <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

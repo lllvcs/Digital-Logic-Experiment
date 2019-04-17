@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Mar 08 18:39:16 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : lab3
+Top-level Entity Name : extra
+Family : MAX V
+Device : 5M160ZM68C5
+Timing Models : Final
+Total logic elements : 5 / 160 ( 3 % )
+Total pins : 6 / 52 ( 12 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

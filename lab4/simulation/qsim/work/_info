@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\digitallogic2173310627\lab4\simulation\qsim
+vlab4
+Z1 IGE]8OeZ=V2C9WeJi`amLD0
+Z2 V6O=f[NK1]6fUkL::VUzcK3
+Z3 dE:\digitallogic2173310627\lab4\simulation\qsim
+Z4 w1552642481
+Z5 8lab4.vo
+Z6 Flab4.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|lab4.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 kXcT4oMKFN@c]^YW=aGC:1
+!s85 0
+Z11 !s108 1552642482.150000
+Z12 !s107 lab4.vo|
+!s101 -O0
+vlab4_vlg_check_tst
+!i10b 1
+Z13 !s100 80JBK[c_IiC^R3h>VEA0`1
+Z14 IjQ:gmiRlmF9=5F:gFX8jP0
+Z15 Vo]VBlnGbe0B2mM?l:RM9J3
+R3
+Z16 w1552642480
+Z17 8lab4.vwf.vt
+Z18 Flab4.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z19 !s108 1552642482.279000
+Z20 !s107 lab4.vwf.vt|
+Z21 !s90 -work|work|lab4.vwf.vt|
+!s101 -O0
+R9
+vlab4_vlg_sample_tst
+!i10b 1
+Z22 !s100 `@hYlK6;9h6VgTdfi@`iY1
+Z23 I0EI6a8DBg`WEW7`@8GE3]0
+Z24 VNTXE<QGeJ6l0RY97SBFKc3
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vlab4_vlg_vec_tst
+!i10b 1
+Z25 !s100 E^FCP0B8a1nTCgUG[TP050
+Z26 I@EXbA`H1??=Y1E8iU?[cY2
+Z27 V62>2YgfYG8@f3B0NOWl8P1
+R3
+R16
+R17
+R18
+Z28 L0 314
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

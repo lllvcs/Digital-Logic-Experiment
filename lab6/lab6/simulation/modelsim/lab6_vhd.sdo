@@ -1,0 +1,253 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera 5M160ZE64C5 Package EQFP64
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "lab6_1")
+  (DATE "03/29/2019 16:57:36")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_in\[1\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_in\[2\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_in\[0\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (986:986:986) (986:986:986))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10438:10438:10438) (10438:10438:10438))
+        (PORT datac (10369:10369:10369) (10369:10369:10369))
+        (PORT datad (10524:10524:10524) (10524:10524:10524))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10449:10449:10449) (10449:10449:10449))
+        (PORT datac (10358:10358:10358) (10358:10358:10358))
+        (PORT datad (10537:10537:10537) (10537:10537:10537))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10447:10447:10447) (10447:10447:10447))
+        (PORT datac (10360:10360:10360) (10360:10360:10360))
+        (PORT datad (10535:10535:10535) (10535:10535:10535))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~3\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10427:10427:10427) (10427:10427:10427))
+        (PORT datac (10372:10372:10372) (10372:10372:10372))
+        (PORT datad (10524:10524:10524) (10524:10524:10524))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~4\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10448:10448:10448) (10448:10448:10448))
+        (PORT datac (10357:10357:10357) (10357:10357:10357))
+        (PORT datad (10537:10537:10537) (10537:10537:10537))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~5\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10434:10434:10434) (10434:10434:10434))
+        (PORT datac (10370:10370:10370) (10370:10370:10370))
+        (PORT datad (10521:10521:10521) (10521:10521:10521))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~6\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10427:10427:10427) (10427:10427:10427))
+        (PORT datac (10372:10372:10372) (10372:10372:10372))
+        (PORT datad (10524:10524:10524) (10524:10524:10524))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\Decoder0\~7\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (10445:10445:10445) (10445:10445:10445))
+        (PORT datac (10363:10363:10363) (10363:10363:10363))
+        (PORT datad (10533:10533:10533) (10533:10533:10533))
+        (IOPATH datab combout (1931:1931:1931) (1931:1931:1931))
+        (IOPATH datac combout (968:968:968) (968:968:968))
+        (IOPATH datad combout (438:438:438) (438:438:438))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[0\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2937:2937:2937) (2937:2937:2937))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[1\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (936:936:936) (936:936:936))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[2\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (929:929:929) (929:929:929))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[3\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (4255:4255:4255) (4255:4255:4255))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[4\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (4274:4274:4274) (4274:4274:4274))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[5\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (6114:6114:6114) (6114:6114:6114))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[6\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (6005:6005:6005) (6005:6005:6005))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\data_out\[7\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (6055:6055:6055) (6055:6055:6055))
+        (IOPATH datain padio (2008:2008:2008) (2008:2008:2008))
+      )
+    )
+  )
+)

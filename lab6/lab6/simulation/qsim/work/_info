@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\digitallogic2173310627\lab6\lab6\simulation\qsim
+vlab6_1
+Z1 IKeV@M`4[ZP>LECnP?RI?33
+Z2 VMNic6Le>YaZ2T;M42?39f3
+Z3 dE:\digitallogic2173310627\lab6\lab6\simulation\qsim
+Z4 w1553850399
+Z5 8lab6.vo
+Z6 Flab6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 3CUoaEnM5Q8mdkSZ=Rhc11
+Z10 !s108 1553850399.732000
+Z11 !s107 lab6.vo|
+Z12 !s90 -work|work|lab6.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vlab6_1_vlg_check_tst
+Z13 IG0T_536g^ChKDVzXT[VDm2
+Z14 V@]diV;VQS;7O>>2cR?O8`3
+R3
+Z15 w1553850398
+Z16 8lab6_2.vwf.vt
+Z17 Flab6_2.vwf.vt
+L0 57
+R7
+r1
+31
+Z18 !s108 1553850399.872000
+Z19 !s107 lab6_2.vwf.vt|
+Z20 !s90 -work|work|lab6_2.vwf.vt|
+R8
+Z21 !s100 7=;KPcK`Hhl_kQK7K42HR3
+!i10b 1
+!s85 0
+!s101 -O0
+vlab6_1_vlg_sample_tst
+Z22 IWnH>_i_>ANg36=Z0B8OYS1
+Z23 VYLzKAfA]OB20C`f69eN0F0
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z24 !s100 S[3bXhI^DoVT7hOG09iP71
+!i10b 1
+!s85 0
+!s101 -O0
+vlab6_1_vlg_vec_tst
+Z25 ILYNzL[;[QW9mh5UA5NhlV0
+Z26 V9[Tb0j8`;86Qz^@1eDNiB0
+R3
+R15
+R16
+R17
+Z27 L0 277
+R7
+r1
+31
+R18
+R19
+R20
+R8
+Z28 !s100 :mo761M9^DD]jS^BXM`E`2
+!i10b 1
+!s85 0
+!s101 -O0
+vlab6_3
+Z29 Ii@iR[cb?h65YFC<H[DKZK3
+Z30 VWmcQ;g4o=ilTb>W8X;lTQ3
+R3
+Z31 w1553853801
+R5
+R6
+L0 31
+R7
+r1
+31
+R12
+R8
+!i10b 1
+Z32 !s100 RlRzJfo[]ZKHze5<e<h233
+!s85 0
+Z33 !s108 1553853801.488000
+R11
+!s101 -O0
+vlab6_3_vlg_check_tst
+!i10b 1
+Z34 !s100 W3ZR=H6EakJ6zmFh2m2_n0
+Z35 IEfZT3CiKT42cSXEEXVeNV3
+Z36 Vi576?cGh=0fkjJVd?ZeYD1
+R3
+Z37 w1553853800
+Z38 8lab6_3Waveform.vwf.vt
+Z39 Flab6_3Waveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z40 !s108 1553853801.597000
+Z41 !s107 lab6_3Waveform.vwf.vt|
+Z42 !s90 -work|work|lab6_3Waveform.vwf.vt|
+!s101 -O0
+R8
+vlab6_3_vlg_sample_tst
+!i10b 1
+Z43 !s100 RTI[f2jfZR0ED@UYf5f5P1
+Z44 IWJ>1<2mgLGDFPn=YG6a<X1
+Z45 V;IP;gUkX6<RQ:RcWF8Cc=2
+R3
+R37
+R38
+R39
+L0 29
+R7
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R8
+vlab6_3_vlg_vec_tst
+!i10b 1
+Z46 !s100 :_z734i`WiM33Q8;;d<z>3
+Z47 I3f9K^CMD]<=]o6HnIb4PX0
+Z48 V1ISl`FcXXYNg4CjDAJCDf1
+R3
+R37
+R38
+R39
+Z49 L0 183
+R7
+r1
+!s85 0
+31
+R40
+R41
+R42
+!s101 -O0
+R8

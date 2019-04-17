@@ -1,0 +1,21 @@
+module extra (
+input clk,
+input clr,
+output reg y
+);
+
+reg[3:0] count;
+always @(posedge clk) begin
+	count<=count+4'h1;
+end
+
+reg clk_2;
+always @(posedge clk) begin
+	if(count == 4'h1) begin
+		clk_2 <= ~clk_2;
+		end
+		else begin
+			clk_2<= clk_2;
+		end
+end
+endmodule

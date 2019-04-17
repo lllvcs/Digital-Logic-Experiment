@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, E:/digitallogic2173310627/lab6/lab6/lab6_1.v
+source_file = 1, E:/digitallogic2173310627/lab6/lab6/lab6_2.vwf
+source_file = 1, E:/digitallogic2173310627/lab6/lab6/output_files/lab6_3.bdf
+source_file = 1, E:/digitallogic2173310627/lab6/lab6/output_files/lab6_3Waveform.vwf
+source_file = 1, E:/digitallogic2173310627/lab6/lab6/db/lab6.cbx.xml
+source_file = 1, d:/altera/13.1/quartus/libraries/others/maxplus2/74138.bdf
+design_name = lab6_3
+instance = comp, \B~I , B, lab6_3, 1
+instance = comp, \Ci_1~I , Ci_1, lab6_3, 1
+instance = comp, \A~I , A, lab6_3, 1
+instance = comp, \inst7~0 , inst7~0, lab6_3, 1
+instance = comp, \inst6~0 , inst6~0, lab6_3, 1
+instance = comp, \Si~I , Si, lab6_3, 1
+instance = comp, \Ci~I , Ci, lab6_3, 1
