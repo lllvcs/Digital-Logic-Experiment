@@ -1,0 +1,21 @@
+|lab8
+Q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst4.CLK
+CLK => inst5.CLK
+CLK => inst7.CLK
+D => inst4.DATAIN
+Q4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+K => inst5.IN0
+J => inst5.IN1
+Q5 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+T => inst7.IN0
+Q1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+R => inst1.IN0
+S => inst.IN1
+Q2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+NR => inst3.IN0
+NS => inst2.IN1
+NQ1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+NQ2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

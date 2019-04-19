@@ -1,0 +1,27 @@
+# do lab8.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab8
+# 
+# Top level modules:
+# 	lab8
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lab8_vlg_sample_tst
+# -- Compiling module lab8_vlg_check_tst
+# -- Compiling module lab8_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab8_vlg_vec_tst
+# vsim -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.lab8_vlg_vec_tst 
+# Loading work.lab8_vlg_vec_tst
+# Loading work.lab8
+# Loading maxv_ver.maxv_io
+# Loading maxv_ver.maxv_lcell
+# Loading maxv_ver.maxv_asynch_lcell
+# Loading maxv_ver.maxv_lcell_register
+# Loading work.lab8_vlg_sample_tst
+# Loading work.lab8_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(326)
+#    Time: 1 us  Iteration: 0  Instance: /lab8_vlg_vec_tst/tb_out
