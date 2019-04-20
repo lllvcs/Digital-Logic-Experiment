@@ -1,13 +1,13 @@
-TimeQuest Timing Analyzer report for lab8
-Fri Apr 19 15:13:30 2019
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+Timing Analyzer report for lab8
+Sat Apr 20 22:09:47 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. TimeQuest Timing Analyzer Summary
+  2. Timing Analyzer Summary
   3. Parallel Compilation
   4. Clocks
   5. Fmax Summary
@@ -18,52 +18,51 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  10. Minimum Pulse Width Summary
  11. Setup: 'CLK'
  12. Hold: 'CLK'
- 13. Minimum Pulse Width: 'CLK'
- 14. Setup Times
- 15. Hold Times
- 16. Clock to Output Times
- 17. Minimum Clock to Output Times
- 18. Propagation Delay
- 19. Minimum Propagation Delay
- 20. Setup Transfers
- 21. Hold Transfers
- 22. Report TCCS
- 23. Report RSKM
- 24. Unconstrained Paths
- 25. TimeQuest Timing Analyzer Messages
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Timing Analyzer Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                        ;
-+--------------------+-----------------------------------------------------+
-; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Full Version ;
-; Revision Name      ; lab8                                                ;
-; Device Family      ; MAX V                                               ;
-; Device Name        ; 5M160ZE64C5                                         ;
-; Timing Models      ; Final                                               ;
-; Delay Model        ; Slow Model                                          ;
-; Rise/Fall Delays   ; Unavailable                                         ;
-+--------------------+-----------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; lab8                                                ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M160ZE64C5                                         ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -79,7 +78,6 @@ applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -107,7 +105,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; CLK   ; -2.711 ; -5.422        ;
+; CLK   ; -2.711 ; -5.421        ;
 +-------+--------+---------------+
 
 
@@ -116,7 +114,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; CLK   ; 3.351 ; 0.000         ;
+; CLK   ; 3.350 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -146,8 +144,8 @@ No paths to report.
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -2.711 ; inst5     ; inst5   ; CLK          ; CLK         ; 1.000        ; 0.000      ; 3.390      ;
 ; -2.711 ; inst7     ; inst7   ; CLK          ; CLK         ; 1.000        ; 0.000      ; 3.390      ;
+; -2.710 ; inst5     ; inst5   ; CLK          ; CLK         ; 1.000        ; 0.000      ; 3.389      ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -156,98 +154,9 @@ No paths to report.
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 3.351 ; inst5     ; inst5   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.390      ;
+; 3.350 ; inst5     ; inst5   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.389      ;
 ; 3.351 ; inst7     ; inst7   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.390      ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Minimum Pulse Width: 'CLK'                                                                   ;
-+--------+--------------+----------------+------------------+-------+------------+-------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
-+--------+--------------+----------------+------------------+-------+------------+-------------+
-; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; CLK   ; Rise       ; CLK         ;
-; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; CLK   ; Rise       ; inst4       ;
-; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; CLK   ; Rise       ; inst4       ;
-; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; CLK   ; Rise       ; inst5       ;
-; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; CLK   ; Rise       ; inst5       ;
-; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; CLK   ; Rise       ; inst7       ;
-; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; CLK   ; Rise       ; inst7       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst4|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst4|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst5|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst5|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst7|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst7|clk   ;
-+--------+--------------+----------------+------------------+-------+------------+-------------+
-
-
-+-----------------------------------------------------------------------+
-; Setup Times                                                           ;
-+-----------+------------+-------+-------+------------+-----------------+
-; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-----------+------------+-------+-------+------------+-----------------+
-; D         ; CLK        ; 4.927 ; 4.927 ; Rise       ; CLK             ;
-; J         ; CLK        ; 4.340 ; 4.340 ; Rise       ; CLK             ;
-; K         ; CLK        ; 5.451 ; 5.451 ; Rise       ; CLK             ;
-; T         ; CLK        ; 5.611 ; 5.611 ; Rise       ; CLK             ;
-+-----------+------------+-------+-------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Hold Times                                                              ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; D         ; CLK        ; -4.567 ; -4.567 ; Rise       ; CLK             ;
-; J         ; CLK        ; -3.980 ; -3.980 ; Rise       ; CLK             ;
-; K         ; CLK        ; -5.091 ; -5.091 ; Rise       ; CLK             ;
-; T         ; CLK        ; -5.251 ; -5.251 ; Rise       ; CLK             ;
-+-----------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Q3        ; CLK        ; 8.569  ; 8.569  ; Rise       ; CLK             ;
-; Q4        ; CLK        ; 12.274 ; 12.274 ; Rise       ; CLK             ;
-; Q5        ; CLK        ; 12.162 ; 12.162 ; Rise       ; CLK             ;
-+-----------+------------+--------+--------+------------+-----------------+
-
-
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Q3        ; CLK        ; 8.569  ; 8.569  ; Rise       ; CLK             ;
-; Q4        ; CLK        ; 12.274 ; 12.274 ; Rise       ; CLK             ;
-; Q5        ; CLK        ; 12.162 ; 12.162 ; Rise       ; CLK             ;
-+-----------+------------+--------+--------+------------+-----------------+
-
-
-+------------------------------------------------------+
-; Propagation Delay                                    ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; NR         ; NQ2         ; 17.625 ;    ;    ; 17.625 ;
-; S          ; NQ1         ; 14.697 ;    ;    ; 14.697 ;
-+------------+-------------+--------+----+----+--------+
-
-
-+------------------------------------------------------+
-; Minimum Propagation Delay                            ;
-+------------+-------------+--------+----+----+--------+
-; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
-+------------+-------------+--------+----+----+--------+
-; NR         ; NQ2         ; 17.625 ;    ;    ; 17.625 ;
-; S          ; NQ1         ; 14.697 ;    ;    ; 14.697 ;
-+------------+-------------+--------+----+----+--------+
 
 
 +-------------------------------------------------------------------+
@@ -283,7 +192,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 
 
 +------------------------------------------------+
-; Unconstrained Paths                            ;
+; Unconstrained Paths Summary                    ;
 +---------------------------------+-------+------+
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
@@ -296,35 +205,108 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
-+------------------------------------+
-; TimeQuest Timing Analyzer Messages ;
-+------------------------------------+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; CLK    ; CLK   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; D          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; K          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NR         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NS         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; NQ1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NQ2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; D          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; J          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; K          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NR         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NS         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; R          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; T          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; NQ1         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; NQ2         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q3          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q4          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Q5          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Apr 19 15:13:29 2019
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Apr 20 22:09:46 2019
 Info: Command: quartus_sta lab8 -c lab8
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (306004): Started post-fitting delay annotation
-Info (306005): Delay annotation completed successfully
-Warning (335093): TimeQuest Timing Analyzer is analyzing 2 combinational loops as latches.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab8.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): The Timing Analyzer is analyzing 2 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab8.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLK CLK
-Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -2.711
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.711              -5.422 CLK 
-Info (332146): Worst-case hold slack is 3.351
+    Info (332119):    -2.711              -5.421 CLK 
+Info (332146): Worst-case hold slack is 3.350
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     3.351               0.000 CLK 
+    Info (332119):     3.350               0.000 CLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -334,10 +316,10 @@ Info (332146): Worst-case minimum pulse width slack is -2.289
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 428 megabytes
-    Info: Processing ended: Fri Apr 19 15:13:30 2019
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Sat Apr 20 22:09:47 2019
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
