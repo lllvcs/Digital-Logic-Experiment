@@ -1,5 +1,5 @@
 Flow report for lab8
-Sat Apr 20 22:27:11 2019
+Sun Apr 21 15:19:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Sat Apr 20 22:27:11 2019       ;
+; Flow Status           ; Successful - Sun Apr 21 15:19:03 2019       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; lab8                                        ;
 ; Top-level Entity Name ; lab8                                        ;
@@ -98,7 +98,41 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:15     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:00:36                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:15     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:15     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; Total                ; 00:01:38     ; --                      ; --                  ; 00:01:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,6 +152,40 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -129,6 +197,40 @@ quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
 quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
 quartus_sta lab8 -c lab8
 quartus_eda --read_settings_files=off --write_settings_files=off lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/ lab8 -c lab8
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt

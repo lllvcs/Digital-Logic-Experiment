@@ -5,13 +5,13 @@ z0
 cModel Technology
 Z0 dE:\digitallogic2172311304\lab8\simulation\qsim
 vlab8
-Z1 !s110 1555770432
+Z1 !s110 1555831144
 !i10b 1
 !s100 mb9?hf4V?jJSAE[hP6JTd0
 IggZd8Y_5KC6]ADkBcC`SY1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dD:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim
-w1555770431
+w1555831143
 8lab8.vo
 Flab8.vo
 L0 31
@@ -19,7 +19,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1555770432.000000
+Z5 !s108 1555831144.000000
 !s107 lab8.vo|
 !s90 -work|work|lab8.vo|
 !i113 1
@@ -66,11 +66,11 @@ R15
 vlab8_vlg_vec_tst
 R1
 !i10b 1
-!s100 Abb?iNOfm1=7ILj=?_z1D3
-IeCoiV2XQSD@Dd:o>8kR0E1
+!s100 jlb[0RZhn9=CL3?68nz?f0
+I`ImcJS1VXR<BZ9z44W=Fj2
 R2
 R3
-w1555770430
+w1555831142
 R9
 R10
 R16

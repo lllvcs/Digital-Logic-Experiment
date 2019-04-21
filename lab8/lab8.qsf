@@ -70,3 +70,4 @@ set_location_assignment PIN_3 -to NQ1
 set_location_assignment PIN_63 -to NQ2
 set_location_assignment PIN_59 -to Q4
 set_location_assignment PIN_56 -to Q5
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf

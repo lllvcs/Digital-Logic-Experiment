@@ -1,12 +1,12 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source="D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf" --testbench_file="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source="D:/GitHub/Digital-Logic-Experiment/lab8/Waveform.vwf" --testbench_file="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source="D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf" --testbench_file="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab8 -c lab8 --vector_source="D:/GitHub/Digital-Logic-Experiment/lab8/Waveform1.vwf" --testbench_file="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
 <fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/" lab8 -c lab8</fnetlist_cmd>
 <tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/GitHub/Digital-Logic-Experiment/lab8/simulation/qsim/" lab8 -c lab8</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work lab8.vo
-vlog -work work Waveform.vwf.vt
+vlog -work work Waveform1.vwf.vt
 vsim -novopt -c -t 1ps -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab8_vlg_vec_tst
 vcd file -direction lab8.msim.vcd
 vcd add -internal lab8_vlg_vec_tst/*
@@ -20,13 +20,11 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work lab8.vo
-vlog -work work Waveform.vwf.vt
+vlog -work work Waveform1.vwf.vt
 vsim -novopt -c -t 1ps -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab8_vlg_vec_tst
 vcd file -direction lab8.msim.vcd
 vcd add -internal lab8_vlg_vec_tst/*
@@ -40,8 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -119,6 +115,66 @@ SIGNAL("K")
 	PARENT = "";
 }
 
+SIGNAL("NQ1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("NQ2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("NR")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("NS")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Q1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Q2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 SIGNAL("Q3")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -179,66 +235,6 @@ SIGNAL("T")
 	PARENT = "";
 }
 
-SIGNAL("NQ1")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("NQ2")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("Q1")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("Q2")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("NR")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("NS")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
 GROUP("S-R")
 {
 	MEMBERS = "S", "R", "Q1", "NQ1";
@@ -249,7 +245,7 @@ GROUP("NS-NR")
 	MEMBERS = "NS", "NR", "Q2", "NQ2";
 }
 
-GROUP("N")
+GROUP("D-Group")
 {
 	MEMBERS = "D", "Q3";
 }
@@ -269,12 +265,7 @@ TRANSITION_LIST("CLK")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -283,19 +274,7 @@ TRANSITION_LIST("D")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 450.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -304,17 +283,7 @@ TRANSITION_LIST("J")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 310.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -323,15 +292,77 @@ TRANSITION_LIST("K")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("NQ1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("NQ2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("NR")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 590.0;
+	}
+}
+
+TRANSITION_LIST("NS")
+{
+	NODE
+	{
+		REPEAT = 1;
 		LEVEL 0 FOR 40.0;
 		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 230.0;
-		LEVEL 1 FOR 240.0;
-		LEVEL 0 FOR 180.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 80.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 590.0;
+	}
+}
+
+TRANSITION_LIST("Q1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Q2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -367,13 +398,13 @@ TRANSITION_LIST("R")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 280.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 120.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 220.0;
-		LEVEL 0 FOR 40.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 590.0;
 	}
 }
 
@@ -382,13 +413,17 @@ TRANSITION_LIST("S")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 300.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 120.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 40.0;
 		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 40.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 590.0;
 	}
 }
 
@@ -397,87 +432,14 @@ TRANSITION_LIST("T")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 60.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 260.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 160.0;
-	}
-}
-
-TRANSITION_LIST("NQ1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("NQ2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Q1")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Q2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("NR")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 40.0;
-	}
-}
-
-TRANSITION_LIST("NS")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 140.0;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 140.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "S-R";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
@@ -527,7 +489,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "NS-NR";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
@@ -585,7 +547,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "N";
+	CHANNEL = "D-Group";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 11;
@@ -616,7 +578,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "J-K";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 0;
