@@ -1,0 +1,53 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLK'
+Slack : -5.918
+TNS   : -18.099
+
+Type  : Setup 'inst22'
+Slack : -2.711
+TNS   : -2.711
+
+Type  : Setup 'inst24'
+Slack : 0.982
+TNS   : 0.000
+
+Type  : Setup 'inst23'
+Slack : 2.030
+TNS   : 0.000
+
+Type  : Hold 'CLK'
+Slack : -9.006
+TNS   : -9.006
+
+Type  : Hold 'inst23'
+Slack : -1.890
+TNS   : -1.890
+
+Type  : Hold 'inst24'
+Slack : -0.842
+TNS   : -0.842
+
+Type  : Hold 'inst22'
+Slack : 3.351
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'inst22'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'inst23'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'inst24'
+Slack : 0.161
+TNS   : 0.000
+
+------------------------------------------------------------

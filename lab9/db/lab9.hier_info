@@ -1,0 +1,58 @@
+|lab9
+Q11 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst24.CLK
+Q12 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q13 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q14 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a1 <= seg:sge0.a
+b1 <= seg:sge0.b
+c1 <= seg:sge0.c
+d1 <= seg:sge0.d
+e1 <= seg:sge0.e
+f1 <= seg:sge0.f
+g1 <= seg:sge0.g
+a2 <= seg:seg2.a
+b2 <= seg:seg2.b
+c2 <= seg:seg2.c
+d2 <= seg:seg2.d
+e2 <= seg:seg2.e
+f2 <= seg:seg2.f
+g2 <= seg:seg2.g
+Q24 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Q23 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+Q21 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+Q22 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab9|seg:sge0
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab9|seg:seg2
+data[0] => Decoder0.IN3
+data[1] => Decoder0.IN2
+data[2] => Decoder0.IN1
+data[3] => Decoder0.IN0
+a <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+b <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+d <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+e <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+f <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+g <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
