@@ -1,5 +1,5 @@
 Flow report for lab9
-Sat Apr 27 15:47:01 2019
+Sun Apr 28 01:17:34 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Sat Apr 27 15:47:01 2019       ;
+; Flow Status           ; Successful - Sun Apr 28 01:17:34 2019       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; lab9                                        ;
 ; Top-level Entity Name ; lab9                                        ;
@@ -93,7 +93,13 @@ refer to the applicable agreement for further details.
 ; Assembler            ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4697 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:32                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,6 +113,12 @@ refer to the applicable agreement for further details.
 ; Assembler            ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LVCS             ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,6 +130,12 @@ quartus_fit --read_settings_files=off --write_settings_files=off lab9 -c lab9
 quartus_asm --read_settings_files=off --write_settings_files=off lab9 -c lab9
 quartus_sta lab9 -c lab9
 quartus_eda --read_settings_files=off --write_settings_files=off lab9 -c lab9
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab9 -c lab9 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab9/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/ lab9 -c lab9
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab9 -c lab9 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab9/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/ lab9 -c lab9
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab9 -c lab9 --vector_source=D:/GitHub/Digital-Logic-Experiment/lab9/Waveform.vwf --testbench_file=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=D:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim/ lab9 -c lab9
 
 
 

@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'PIN7'
+Slack : -21.000
+TNS   : -292.468
+
+Type  : Setup 'clk_div:inst5|clk1'
+Slack : -10.326
+TNS   : -41.677
+
+Type  : Hold 'PIN7'
+Slack : -0.198
+TNS   : -0.198
+
+Type  : Hold 'clk_div:inst5|clk1'
+Slack : 3.581
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'PIN7'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'clk_div:inst5|clk1'
+Slack : 0.161
+TNS   : 0.000
+
+------------------------------------------------------------

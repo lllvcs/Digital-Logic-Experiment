@@ -1,81 +1,86 @@
 m255
 K3
+z0
 13
 cModel Technology
 Z0 dE:\digitallogic2173310627\lab9\simulation\qsim
 vlab9
-Z1 !s100 KBo^5RzOTLzC`HSlS;hz21
-Z2 I4=[HU@8zF6MJ9llmMk<RQ2
-Z3 VOaXf9QonVo[QTONYmM@Gl2
-Z4 dE:\digitallogic2173310627\lab9\simulation\qsim
-Z5 w1556271342
-Z6 8lab9.vo
-Z7 Flab9.vo
-L0 31
-Z8 OV;L;10.1d;51
-r1
-31
-Z9 !s90 -work|work|lab9.vo|
-Z10 o-work work -O0
+Z1 !s110 1556385461
 !i10b 1
+!s100 6TGNNbz7kQm[bOb0[cB3k2
+IJNc?I<0n^6f:_fO1FWkeE2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/GitHub/Digital-Logic-Experiment/lab9/simulation/qsim
+w1556385453
+8lab9.vo
+Flab9.vo
+L0 31
+Z4 OV;L;10.5b;63
+r1
 !s85 0
-Z11 !s108 1556271342.504000
-Z12 !s107 lab9.vo|
-!s101 -O0
+31
+!s108 1556385460.000000
+!s107 lab9.vo|
+!s90 -work|work|lab9.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
 vlab9_vlg_check_tst
 !i10b 1
-Z13 !s100 HXAzJ[6?Q]MX_7k;6QeSP3
-Z14 I[LdFz]6?>`B:?2N=z2kI]2
-Z15 VcFl=EbdzC`QgiU;J_?8P42
-R4
-Z16 w1556271341
-Z17 8Waveform.vwf.vt
-Z18 FWaveform.vwf.vt
+!s100 HXAzJ[6?Q]MX_7k;6QeSP3
+I[LdFz]6?>`B:?2N=z2kI]2
+VcFl=EbdzC`QgiU;J_?8P42
+R0
+Z7 w1556271341
+Z8 8Waveform.vwf.vt
+Z9 FWaveform.vwf.vt
 L0 57
-R8
+Z10 OV;L;10.1d;51
 r1
 !s85 0
 31
-Z19 !s108 1556271342.675000
-Z20 !s107 Waveform.vwf.vt|
-Z21 !s90 -work|work|Waveform.vwf.vt|
+Z11 !s108 1556271342.675000
+Z12 !s107 Waveform.vwf.vt|
+Z13 !s90 -work|work|Waveform.vwf.vt|
 !s101 -O0
-R10
+Z14 o-work work -O0
 vlab9_vlg_sample_tst
 !i10b 1
-Z22 !s100 L4AHAc3<FP<E_SUGh=DEc2
-Z23 IhF>>4GMHDY1^b_YIg>kGc0
-Z24 Vk7Ya=Cd4Lb2:44^ZCMOX11
-R4
-R16
-R17
-R18
-L0 29
+!s100 L4AHAc3<FP<E_SUGh=DEc2
+IhF>>4GMHDY1^b_YIg>kGc0
+Vk7Ya=Cd4Lb2:44^ZCMOX11
+R0
+R7
 R8
+R9
+Z15 L0 29
+R10
 r1
 !s85 0
 31
-R19
-R20
-R21
+R11
+R12
+R13
 !s101 -O0
-R10
+R14
 vlab9_vlg_vec_tst
+R1
 !i10b 1
-!s100 KaoF`nY>TInO8<b?l?B7H0
-ILVPbWl<`lRi7aU5?`1cQR3
-Z25 VCYc_c^Ii;l28QUkaABIaP2
-R4
-R16
-R17
-R18
-Z26 L0 411
+!s100 B>Pzm8[D`;Ac5A8S[>IBi1
+I3d9G<AEC9Ol9XV6eO8e2L0
+R2
+R3
+w1556385452
 R8
+R9
+R15
+R4
 r1
 !s85 0
 31
-R19
-R20
-R21
-!s101 -O0
-R10
+!s108 1556385461.000000
+R12
+R13
+!i113 1
+R5
+R6

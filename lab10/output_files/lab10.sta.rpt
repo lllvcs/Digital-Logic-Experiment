@@ -1,0 +1,684 @@
+TimeQuest Timing Analyzer report for lab10
+Sun May 05 18:31:01 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'PIN7'
+ 12. Setup: 'clk_div:inst5|clk1'
+ 13. Hold: 'PIN7'
+ 14. Hold: 'clk_div:inst5|clk1'
+ 15. Minimum Pulse Width: 'PIN7'
+ 16. Minimum Pulse Width: 'clk_div:inst5|clk1'
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Setup Transfers
+ 20. Hold Transfers
+ 21. Report TCCS
+ 22. Report RSKM
+ 23. Unconstrained Paths
+ 24. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name      ; lab10                                               ;
+; Device Family      ; MAX V                                               ;
+; Device Name        ; 5M160ZE64C5                                         ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Slow Model                                          ;
+; Rise/Fall Delays   ; Unavailable                                         ;
++--------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                 ;
++--------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------+
+; Clock Name         ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                ;
++--------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------+
+; clk_div:inst5|clk1 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_div:inst5|clk1 } ;
+; PIN7               ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { PIN7 }               ;
++--------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------+
+
+
++---------------------------------------------------------+
+; Fmax Summary                                            ;
++-----------+-----------------+--------------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name         ; Note ;
++-----------+-----------------+--------------------+------+
+; 45.45 MHz ; 45.45 MHz       ; PIN7               ;      ;
+; 88.29 MHz ; 88.29 MHz       ; clk_div:inst5|clk1 ;      ;
++-----------+-----------------+--------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------------+
+; Setup Summary                                ;
++--------------------+---------+---------------+
+; Clock              ; Slack   ; End Point TNS ;
++--------------------+---------+---------------+
+; PIN7               ; -21.000 ; -292.468      ;
+; clk_div:inst5|clk1 ; -10.326 ; -41.677       ;
++--------------------+---------+---------------+
+
+
++---------------------------------------------+
+; Hold Summary                                ;
++--------------------+--------+---------------+
+; Clock              ; Slack  ; End Point TNS ;
++--------------------+--------+---------------+
+; PIN7               ; -0.198 ; -0.198        ;
+; clk_div:inst5|clk1 ; 3.581  ; 0.000         ;
++--------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------------------+
+; Minimum Pulse Width Summary                 ;
++--------------------+--------+---------------+
+; Clock              ; Slack  ; End Point TNS ;
++--------------------+--------+---------------+
+; PIN7               ; -2.289 ; -2.289        ;
+; clk_div:inst5|clk1 ; 0.161  ; 0.000         ;
++--------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'PIN7'                                                                                                                     ;
++---------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node               ; To Node                 ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+; -21.000 ; clk_div:inst5|count[5]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 21.679     ;
+; -20.973 ; clk_div:inst5|count[8]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 21.652     ;
+; -20.757 ; clk_div:inst5|count[6]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 21.436     ;
+; -20.598 ; clk_div:inst5|count[7]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 21.277     ;
+; -20.261 ; clk_div:inst5|count[11] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 20.940     ;
+; -20.088 ; clk_div:inst5|count[12] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 20.767     ;
+; -19.925 ; clk_div:inst5|count[16] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 20.604     ;
+; -19.893 ; clk_div:inst5|count[13] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 20.572     ;
+; -18.959 ; clk_div:inst5|count[9]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.638     ;
+; -18.885 ; clk_div:inst5|count[14] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.564     ;
+; -18.806 ; clk_div:inst5|count[16] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.485     ;
+; -18.704 ; clk_div:inst5|count[2]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.383     ;
+; -18.690 ; clk_div:inst5|count[4]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.369     ;
+; -18.571 ; clk_div:inst5|count[0]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.250     ;
+; -18.557 ; clk_div:inst5|count[10] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.236     ;
+; -18.396 ; clk_div:inst5|count[1]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 19.075     ;
+; -18.089 ; clk_div:inst5|count[3]  ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 18.768     ;
+; -17.452 ; clk_div:inst5|count[17] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 18.131     ;
+; -17.368 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 18.047     ;
+; -17.341 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 18.020     ;
+; -17.125 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.804     ;
+; -16.966 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.645     ;
+; -16.888 ; clk_div:inst5|count[11] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.567     ;
+; -16.886 ; clk_div:inst5|count[16] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.565     ;
+; -16.868 ; clk_div:inst5|count[14] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.547     ;
+; -16.715 ; clk_div:inst5|count[12] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.394     ;
+; -16.540 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.219     ;
+; -16.520 ; clk_div:inst5|count[13] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.199     ;
+; -16.513 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.192     ;
+; -16.333 ; clk_div:inst5|count[17] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 17.012     ;
+; -16.297 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 16.976     ;
+; -16.138 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 16.817     ;
+; -15.697 ; clk_div:inst5|count[19] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 16.376     ;
+; -15.383 ; clk_div:inst5|count[15] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 16.062     ;
+; -15.327 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 16.006     ;
+; -15.184 ; clk_div:inst5|count[10] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.863     ;
+; -15.072 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.751     ;
+; -15.070 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[11] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.749     ;
+; -15.058 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.737     ;
+; -15.054 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[12] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.733     ;
+; -15.043 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[11] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.722     ;
+; -15.027 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[12] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.706     ;
+; -15.003 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.682     ;
+; -14.976 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.655     ;
+; -14.939 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.618     ;
+; -14.871 ; clk_div:inst5|count[18] ; clk_div:inst5|clk1      ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.550     ;
+; -14.827 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[11] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.506     ;
+; -14.811 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[12] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.490     ;
+; -14.764 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.443     ;
+; -14.760 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.439     ;
+; -14.759 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.438     ;
+; -14.732 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.411     ;
+; -14.715 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.394     ;
+; -14.688 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.367     ;
+; -14.681 ; clk_div:inst5|count[16] ; clk_div:inst5|count[18] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.360     ;
+; -14.668 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[11] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.347     ;
+; -14.652 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[12] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.331     ;
+; -14.601 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.280     ;
+; -14.578 ; clk_div:inst5|count[19] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.257     ;
+; -14.557 ; clk_div:inst5|count[16] ; clk_div:inst5|count[17] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.236     ;
+; -14.523 ; clk_div:inst5|count[11] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.202     ;
+; -14.516 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.195     ;
+; -14.503 ; clk_div:inst5|count[14] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.182     ;
+; -14.499 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.178     ;
+; -14.472 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.151     ;
+; -14.457 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.136     ;
+; -14.413 ; clk_div:inst5|count[17] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.092     ;
+; -14.357 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.036     ;
+; -14.350 ; clk_div:inst5|count[12] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 15.029     ;
+; -14.313 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.992     ;
+; -14.264 ; clk_div:inst5|count[15] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.943     ;
+; -14.244 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.923     ;
+; -14.230 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.909     ;
+; -14.155 ; clk_div:inst5|count[13] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.834     ;
+; -14.111 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.790     ;
+; -14.108 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[8]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.787     ;
+; -14.037 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[6]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.716     ;
+; -13.995 ; clk_div:inst5|count[11] ; clk_div:inst5|count[12] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.674     ;
+; -13.976 ; clk_div:inst5|count[11] ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.655     ;
+; -13.936 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.615     ;
+; -13.865 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[8]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.544     ;
+; -13.860 ; clk_div:inst5|count[11] ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.539     ;
+; -13.832 ; clk_div:inst5|count[19] ; clk_div:inst5|count[20] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.511     ;
+; -13.803 ; clk_div:inst5|count[12] ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.482     ;
+; -13.752 ; clk_div:inst5|count[18] ; clk_div:inst5|count[19] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.431     ;
+; -13.706 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[8]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.385     ;
+; -13.687 ; clk_div:inst5|count[12] ; clk_div:inst5|count[13] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.366     ;
+; -13.629 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[10] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.308     ;
+; -13.608 ; clk_div:inst5|count[13] ; clk_div:inst5|count[14] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.287     ;
+; -13.439 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[17] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.118     ;
+; -13.412 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[17] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.091     ;
+; -13.403 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[18] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.082     ;
+; -13.400 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[7]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.079     ;
+; -13.376 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[18] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.055     ;
+; -13.334 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[15] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 14.013     ;
+; -13.307 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[15] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 13.986     ;
+; -13.231 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[8]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 13.910     ;
+; -13.196 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[17] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 13.875     ;
+; -13.160 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[18] ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 13.839     ;
+; -13.157 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[7]  ; PIN7         ; PIN7        ; 1.000        ; 0.000      ; 13.836     ;
++---------+-------------------------+-------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk_div:inst5|clk1'                                                                                                                          ;
++---------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+; Slack   ; From Node                  ; To Node                    ; Launch Clock       ; Latch Clock        ; Relationship ; Clock Skew ; Data Delay ;
++---------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+; -10.326 ; 74162:inst99|43            ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 11.005     ;
+; -8.453  ; 74162:inst99|43            ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 9.132      ;
+; -7.644  ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 8.323      ;
+; -6.159  ; 74162:inst99|43            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 6.838      ;
+; -6.149  ; 74162:inst99|43            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 6.828      ;
+; -6.073  ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 6.752      ;
+; -5.931  ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 6.610      ;
+; -5.757  ; 74162:inst99|43            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 6.436      ;
+; -4.889  ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 5.568      ;
+; -4.833  ; 74162:inst99|43            ; 74162:inst99|43            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 5.512      ;
+; -3.321  ; 74162:inst99|45            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 4.000      ;
+; -3.320  ; 74162:inst99|45            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 3.999      ;
+; -3.316  ; 74162:inst99|46            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 3.995      ;
+; -2.946  ; 74162:inst99|44            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 3.625      ;
+; -2.945  ; 74162:inst99|44            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 3.624      ;
+; -2.941  ; 74162:inst99|44            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 1.000        ; 0.000      ; 3.620      ;
++---------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'PIN7'                                                                                                                           ;
++--------+-------------------------+-------------------------+--------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node               ; To Node                 ; Launch Clock       ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------+-------------------------+--------------------+-------------+--------------+------------+------------+
+; -0.198 ; clk_div:inst5|clk1      ; clk_div:inst5|clk1      ; clk_div:inst5|clk1 ; PIN7        ; 0.000        ; 4.946      ; 5.281      ;
+; 0.302  ; clk_div:inst5|clk1      ; clk_div:inst5|clk1      ; clk_div:inst5|clk1 ; PIN7        ; -0.500       ; 4.946      ; 5.281      ;
+; 6.994  ; clk_div:inst5|count[1]  ; clk_div:inst5|count[1]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.033      ;
+; 7.009  ; clk_div:inst5|count[0]  ; clk_div:inst5|count[0]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.048      ;
+; 7.193  ; clk_div:inst5|count[2]  ; clk_div:inst5|count[2]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.232      ;
+; 7.238  ; clk_div:inst5|count[3]  ; clk_div:inst5|count[3]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.277      ;
+; 7.461  ; clk_div:inst5|count[4]  ; clk_div:inst5|count[4]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.500      ;
+; 7.950  ; clk_div:inst5|count[1]  ; clk_div:inst5|count[2]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 7.989      ;
+; 7.980  ; clk_div:inst5|count[0]  ; clk_div:inst5|count[1]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.019      ;
+; 8.109  ; clk_div:inst5|count[0]  ; clk_div:inst5|count[2]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.148      ;
+; 8.221  ; clk_div:inst5|count[3]  ; clk_div:inst5|count[4]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.260      ;
+; 8.340  ; clk_div:inst5|count[1]  ; clk_div:inst5|count[3]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.379      ;
+; 8.496  ; clk_div:inst5|count[1]  ; clk_div:inst5|count[4]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.535      ;
+; 8.499  ; clk_div:inst5|count[0]  ; clk_div:inst5|count[3]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.538      ;
+; 8.655  ; clk_div:inst5|count[0]  ; clk_div:inst5|count[4]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.694      ;
+; 8.663  ; clk_div:inst5|count[2]  ; clk_div:inst5|count[3]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.702      ;
+; 8.819  ; clk_div:inst5|count[2]  ; clk_div:inst5|count[4]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 8.858      ;
+; 9.380  ; clk_div:inst5|count[15] ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 9.419      ;
+; 9.417  ; clk_div:inst5|count[18] ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 9.456      ;
+; 9.593  ; clk_div:inst5|count[9]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 9.632      ;
+; 10.165 ; clk_div:inst5|count[15] ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.204     ;
+; 10.298 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.337     ;
+; 10.573 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.612     ;
+; 10.600 ; clk_div:inst5|count[15] ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.639     ;
+; 10.708 ; clk_div:inst5|count[15] ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.747     ;
+; 10.732 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.771     ;
+; 10.847 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.886     ;
+; 10.896 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.935     ;
+; 10.929 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 10.968     ;
+; 11.033 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.072     ;
+; 11.102 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.141     ;
+; 11.122 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.161     ;
+; 11.138 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.177     ;
+; 11.257 ; clk_div:inst5|count[20] ; clk_div:inst5|count[20] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.296     ;
+; 11.281 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.320     ;
+; 11.308 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.347     ;
+; 11.377 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.416     ;
+; 11.413 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.452     ;
+; 11.445 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.484     ;
+; 11.467 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.506     ;
+; 11.478 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.517     ;
+; 11.526 ; clk_div:inst5|count[10] ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.565     ;
+; 11.536 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.575     ;
+; 11.572 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.611     ;
+; 11.631 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.670     ;
+; 11.664 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.703     ;
+; 11.700 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.739     ;
+; 11.712 ; clk_div:inst5|count[10] ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.751     ;
+; 11.733 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.772     ;
+; 11.736 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.775     ;
+; 11.747 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.786     ;
+; 11.767 ; clk_div:inst5|count[20] ; clk_div:inst5|clk1      ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.806     ;
+; 11.769 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.808     ;
+; 11.781 ; clk_div:inst5|count[10] ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.820     ;
+; 11.817 ; clk_div:inst5|count[10] ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.856     ;
+; 11.864 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.903     ;
+; 11.874 ; clk_div:inst5|count[17] ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.913     ;
+; 11.933 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[15] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 11.972     ;
+; 12.002 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.041     ;
+; 12.038 ; clk_div:inst5|count[9]  ; clk_div:inst5|count[17] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.077     ;
+; 12.139 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.178     ;
+; 12.283 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[5]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.322     ;
+; 12.298 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.337     ;
+; 12.337 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.376     ;
+; 12.412 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[8]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.451     ;
+; 12.414 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[14] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.453     ;
+; 12.450 ; clk_div:inst5|count[18] ; clk_div:inst5|count[20] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.489     ;
+; 12.458 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[13] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.497     ;
+; 12.462 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.501     ;
+; 12.480 ; clk_div:inst5|count[6]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.519     ;
+; 12.495 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.534     ;
+; 12.558 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[5]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.597     ;
+; 12.661 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[6]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.700     ;
+; 12.687 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[8]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.726     ;
+; 12.689 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[14] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.728     ;
+; 12.702 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[20] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.741     ;
+; 12.707 ; clk_div:inst5|count[5]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.746     ;
+; 12.717 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[5]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.756     ;
+; 12.725 ; clk_div:inst5|count[10] ; clk_div:inst5|count[13] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.764     ;
+; 12.728 ; clk_div:inst5|count[8]  ; clk_div:inst5|count[9]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.767     ;
+; 12.733 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[13] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.772     ;
+; 12.748 ; clk_div:inst5|count[10] ; clk_div:inst5|count[11] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.787     ;
+; 12.753 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[12] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.792     ;
+; 12.769 ; clk_div:inst5|count[3]  ; clk_div:inst5|count[11] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.808     ;
+; 12.788 ; clk_div:inst5|count[7]  ; clk_div:inst5|count[7]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.827     ;
+; 12.809 ; clk_div:inst5|count[17] ; clk_div:inst5|count[18] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.848     ;
+; 12.825 ; clk_div:inst5|count[10] ; clk_div:inst5|count[14] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.864     ;
+; 12.846 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[8]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.885     ;
+; 12.848 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[14] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.887     ;
+; 12.876 ; clk_div:inst5|count[10] ; clk_div:inst5|count[12] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.915     ;
+; 12.881 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[5]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.920     ;
+; 12.892 ; clk_div:inst5|count[0]  ; clk_div:inst5|count[13] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.931     ;
+; 12.910 ; clk_div:inst5|count[13] ; clk_div:inst5|count[16] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.949     ;
+; 12.914 ; clk_div:inst5|count[4]  ; clk_div:inst5|count[5]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.953     ;
+; 12.914 ; clk_div:inst5|count[15] ; clk_div:inst5|count[20] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.953     ;
+; 12.936 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[6]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.975     ;
+; 12.960 ; clk_div:inst5|count[18] ; clk_div:inst5|clk1      ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 12.999     ;
+; 12.977 ; clk_div:inst5|count[1]  ; clk_div:inst5|count[20] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 13.016     ;
+; 13.010 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[8]  ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 13.049     ;
+; 13.012 ; clk_div:inst5|count[2]  ; clk_div:inst5|count[14] ; PIN7               ; PIN7        ; 0.000        ; 0.000      ; 13.051     ;
++--------+-------------------------+-------------------------+--------------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk_div:inst5|clk1'                                                                                                                         ;
++-------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock       ; Latch Clock        ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+; 3.581 ; 74162:inst99|44            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 3.620      ;
+; 3.585 ; 74162:inst99|44            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 3.624      ;
+; 3.586 ; 74162:inst99|44            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 3.625      ;
+; 3.956 ; 74162:inst99|46            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 3.995      ;
+; 3.960 ; 74162:inst99|45            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 3.999      ;
+; 3.961 ; 74162:inst99|45            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 4.000      ;
+; 5.473 ; 74162:inst99|43            ; 74162:inst99|43            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 5.512      ;
+; 5.529 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 5.568      ;
+; 6.397 ; 74162:inst99|43            ; 74162:inst99|46            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.436      ;
+; 6.411 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.450      ;
+; 6.475 ; 74162:inst99|43            ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.514      ;
+; 6.531 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.570      ;
+; 6.619 ; 74162:inst99|43            ; 74163:inst6|f74163:sub|122 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.658      ;
+; 6.789 ; 74162:inst99|43            ; 74162:inst99|45            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.828      ;
+; 6.799 ; 74162:inst99|43            ; 74162:inst99|44            ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 6.838      ;
+; 8.284 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|111 ; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 0.000        ; 0.000      ; 8.323      ;
++-------+----------------------------+----------------------------+--------------------+--------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'PIN7'                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                  ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; PIN7  ; Rise       ; PIN7                    ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|clk1      ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|clk1      ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[0]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[0]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[10] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[10] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[11] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[11] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[12] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[12] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[13] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[13] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[14] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[14] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[15] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[15] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[16] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[16] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[17] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[17] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[18] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[18] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[19] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[19] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[1]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[1]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[20] ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[20] ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[2]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[2]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[3]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[3]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[4]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[4]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[5]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[5]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[6]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[6]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[7]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[7]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[8]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[8]  ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; PIN7  ; Rise       ; clk_div:inst5|count[9]  ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; PIN7  ; Rise       ; clk_div:inst5|count[9]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; PIN7|combout            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; PIN7|combout            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|clk1|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|clk1|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[0]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[10]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[10]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[11]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[11]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[12]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[12]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[13]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[13]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[14]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[14]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[15]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[15]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[16]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[16]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[17]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[17]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[18]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[18]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[19]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[19]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[1]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[20]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[20]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[2]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[3]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[4]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[5]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[6]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[7]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[8]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[8]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; PIN7  ; Rise       ; inst5|count[9]|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; PIN7  ; Rise       ; inst5|count[9]|clk      ;
++--------+--------------+----------------+------------------+-------+------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clk_div:inst5|clk1'                                                                               ;
++-------+--------------+----------------+------------------+--------------------+------------+----------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock              ; Clock Edge ; Target                     ;
++-------+--------------+----------------+------------------+--------------------+------------+----------------------------+
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|43            ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|43            ;
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|44            ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|44            ;
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|45            ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|45            ;
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|46            ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74162:inst99|46            ;
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74163:inst6|f74163:sub|111 ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74163:inst6|f74163:sub|111 ;
+; 0.161 ; 0.500        ; 0.339          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; 74163:inst6|f74163:sub|122 ;
+; 0.161 ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; 74163:inst6|f74163:sub|122 ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst5|clk1|regout          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst5|clk1|regout          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst6|sub|111|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst6|sub|111|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst6|sub|122|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst6|sub|122|clk          ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst99|43|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst99|43|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst99|44|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst99|44|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst99|45|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst99|45|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; clk_div:inst5|clk1 ; Rise       ; inst99|46|clk              ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_div:inst5|clk1 ; Rise       ; inst99|46|clk              ;
++-------+--------------+----------------+------------------+--------------------+------------+----------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Clock to Output Times                                                              ;
++-----------+--------------------+--------+--------+------------+--------------------+
+; Data Port ; Clock Port         ; Rise   ; Fall   ; Clock Edge ; Clock Reference    ;
++-----------+--------------------+--------+--------+------------+--------------------+
+; a         ; clk_div:inst5|clk1 ; 18.894 ; 18.894 ; Rise       ; clk_div:inst5|clk1 ;
+; b         ; clk_div:inst5|clk1 ; 18.934 ; 18.934 ; Rise       ; clk_div:inst5|clk1 ;
+; c         ; clk_div:inst5|clk1 ; 15.592 ; 15.592 ; Rise       ; clk_div:inst5|clk1 ;
+; d         ; clk_div:inst5|clk1 ; 15.585 ; 15.585 ; Rise       ; clk_div:inst5|clk1 ;
+; e         ; clk_div:inst5|clk1 ; 15.655 ; 15.655 ; Rise       ; clk_div:inst5|clk1 ;
+; f         ; clk_div:inst5|clk1 ; 20.665 ; 20.665 ; Rise       ; clk_div:inst5|clk1 ;
+; g         ; clk_div:inst5|clk1 ; 20.715 ; 20.715 ; Rise       ; clk_div:inst5|clk1 ;
+; s0        ; clk_div:inst5|clk1 ; 15.592 ; 15.592 ; Rise       ; clk_div:inst5|clk1 ;
+; s1        ; clk_div:inst5|clk1 ; 15.586 ; 15.586 ; Rise       ; clk_div:inst5|clk1 ;
+; s2        ; clk_div:inst5|clk1 ; 16.117 ; 16.117 ; Rise       ; clk_div:inst5|clk1 ;
+; s3        ; clk_div:inst5|clk1 ; 19.457 ; 19.457 ; Rise       ; clk_div:inst5|clk1 ;
+; s4        ; clk_div:inst5|clk1 ; 19.962 ; 19.962 ; Rise       ; clk_div:inst5|clk1 ;
+; s5        ; clk_div:inst5|clk1 ; 21.225 ; 21.225 ; Rise       ; clk_div:inst5|clk1 ;
++-----------+--------------------+--------+--------+------------+--------------------+
+
+
++------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                      ;
++-----------+--------------------+--------+--------+------------+--------------------+
+; Data Port ; Clock Port         ; Rise   ; Fall   ; Clock Edge ; Clock Reference    ;
++-----------+--------------------+--------+--------+------------+--------------------+
+; a         ; clk_div:inst5|clk1 ; 16.065 ; 16.065 ; Rise       ; clk_div:inst5|clk1 ;
+; b         ; clk_div:inst5|clk1 ; 16.094 ; 16.094 ; Rise       ; clk_div:inst5|clk1 ;
+; c         ; clk_div:inst5|clk1 ; 12.751 ; 12.751 ; Rise       ; clk_div:inst5|clk1 ;
+; d         ; clk_div:inst5|clk1 ; 12.744 ; 12.744 ; Rise       ; clk_div:inst5|clk1 ;
+; e         ; clk_div:inst5|clk1 ; 13.620 ; 13.620 ; Rise       ; clk_div:inst5|clk1 ;
+; f         ; clk_div:inst5|clk1 ; 17.832 ; 17.832 ; Rise       ; clk_div:inst5|clk1 ;
+; g         ; clk_div:inst5|clk1 ; 18.686 ; 18.686 ; Rise       ; clk_div:inst5|clk1 ;
+; s0        ; clk_div:inst5|clk1 ; 13.707 ; 13.707 ; Rise       ; clk_div:inst5|clk1 ;
+; s1        ; clk_div:inst5|clk1 ; 13.700 ; 13.700 ; Rise       ; clk_div:inst5|clk1 ;
+; s2        ; clk_div:inst5|clk1 ; 13.287 ; 13.287 ; Rise       ; clk_div:inst5|clk1 ;
+; s3        ; clk_div:inst5|clk1 ; 16.627 ; 16.627 ; Rise       ; clk_div:inst5|clk1 ;
+; s4        ; clk_div:inst5|clk1 ; 17.131 ; 17.131 ; Rise       ; clk_div:inst5|clk1 ;
+; s5        ; clk_div:inst5|clk1 ; 18.396 ; 18.396 ; Rise       ; clk_div:inst5|clk1 ;
++-----------+--------------------+--------+--------+------------+--------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Setup Transfers                                                                     ;
++--------------------+--------------------+----------+----------+----------+----------+
+; From Clock         ; To Clock           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------+--------------------+----------+----------+----------+----------+
+; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 22       ; 0        ; 0        ; 0        ;
+; clk_div:inst5|clk1 ; PIN7               ; 1        ; 1        ; 0        ; 0        ;
+; PIN7               ; PIN7               ; 814      ; 0        ; 0        ; 0        ;
++--------------------+--------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------+
+; Hold Transfers                                                                      ;
++--------------------+--------------------+----------+----------+----------+----------+
+; From Clock         ; To Clock           ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------+--------------------+----------+----------+----------+----------+
+; clk_div:inst5|clk1 ; clk_div:inst5|clk1 ; 22       ; 0        ; 0        ; 0        ;
+; clk_div:inst5|clk1 ; PIN7               ; 1        ; 1        ; 0        ; 0        ;
+; PIN7               ; PIN7               ; 814      ; 0        ; 0        ; 0        ;
++--------------------+--------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 13    ; 13   ;
+; Unconstrained Output Port Paths ; 46    ; 46   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Sun May 05 18:31:01 2019
+Info: Command: quartus_sta lab10 -c lab10
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab10.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk_div:inst5|clk1 clk_div:inst5|clk1
+    Info (332105): create_clock -period 1.000 -name PIN7 PIN7
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -21.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -21.000            -292.468 PIN7 
+    Info (332119):   -10.326             -41.677 clk_div:inst5|clk1 
+Info (332146): Worst-case hold slack is -0.198
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.198              -0.198 PIN7 
+    Info (332119):     3.581               0.000 clk_div:inst5|clk1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 PIN7 
+    Info (332119):     0.161               0.000 clk_div:inst5|clk1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 424 megabytes
+    Info: Processing ended: Sun May 05 18:31:01 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
