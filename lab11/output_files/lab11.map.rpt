@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab11
-Fri May 17 18:10:02 2019
+Fri May 24 18:54:29 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,8 +13,11 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: count24:inst43|74161:inst
+ 11. Parameter Settings for User Entity Instance: count24:inst43|74161:inst1
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -40,13 +43,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri May 17 18:10:02 2019       ;
+; Analysis & Synthesis Status ; Successful - Fri May 24 18:54:29 2019       ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name               ; lab11                                       ;
-; Top-level Entity Name       ; count60                                     ;
+; Top-level Entity Name       ; lab11                                       ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 10                                          ;
-; Total pins                  ; 9                                           ;
+; Total logic elements        ; 158                                         ;
+; Total pins                  ; 16                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -58,8 +61,8 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; 5M160ZE64C5        ;                    ;
-; Top-level entity name                                                      ; count60            ; lab11              ;
-; Family name                                                                ; MAX V              ; Cyclone IV GX      ;
+; Top-level entity name                                                      ; lab11              ; lab11              ;
+; Family name                                                                ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -142,60 +145,98 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
-; count60.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/count60.bdf                ;         ;
-; 74162.bdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74162.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
+; div.v                            ; yes             ; User Verilog HDL File              ; E:/digitallogic2173310627/lab11/div.v                       ;         ;
+; lab11.bdf                        ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/lab11.bdf                   ;         ;
+; count60.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/count60.bdf                 ;         ;
+; count24.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/count24.bdf                 ;         ;
+; display.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/display.bdf                 ;         ;
+; sel.bdf                          ; yes             ; User Block Diagram/Schematic File  ; E:/digitallogic2173310627/lab11/sel.bdf                     ;         ;
+; 7449.bdf                         ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/7449.bdf   ;         ;
+; 74244.bdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74244.bdf  ;         ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74138.bdf  ;         ;
+; 74162.bdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74162.bdf  ;         ;
+; 74160.bdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74160.bdf  ;         ;
+; 74161.tdf                        ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/74161.tdf  ;         ;
+; aglobal.inc                      ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal.inc  ;         ;
+; f74161.bdf                       ; yes             ; Megafunction                       ; d:/altera/13.1/quartus/libraries/others/maxplus2/f74161.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Total logic elements                        ; 10            ;
-;     -- Combinational with no register       ; 2             ;
-;     -- Register only                        ; 0             ;
-;     -- Combinational with a register        ; 8             ;
-;                                             ;               ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 3             ;
-;     -- 3 input functions                    ; 5             ;
-;     -- 2 input functions                    ; 1             ;
-;     -- 1 input functions                    ; 1             ;
-;     -- 0 input functions                    ; 0             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 10            ;
-;     -- arithmetic mode                      ; 0             ;
-;     -- qfbk mode                            ; 0             ;
-;     -- register cascade mode                ; 0             ;
-;     -- synchronous clear/load mode          ; 0             ;
-;     -- asynchronous clear/load mode         ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 8             ;
-; I/O pins                                    ; 9             ;
-; Maximum fan-out node                        ; 74162:inst|43 ;
-; Maximum fan-out                             ; 6             ;
-; Total fan-out                               ; 46            ;
-; Average fan-out                             ; 2.42          ;
-+---------------------------------------------+---------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 158   ;
+;     -- Combinational with no register       ; 91    ;
+;     -- Register only                        ; 24    ;
+;     -- Combinational with a register        ; 43    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 44    ;
+;     -- 3 input functions                    ; 24    ;
+;     -- 2 input functions                    ; 59    ;
+;     -- 1 input functions                    ; 7     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 116   ;
+;     -- arithmetic mode                      ; 42    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 22    ;
+;                                             ;       ;
+; Total registers                             ; 67    ;
+; Total logic cells in carry chains           ; 46    ;
+; I/O pins                                    ; 16    ;
+; Maximum fan-out node                        ; pin7  ;
+; Maximum fan-out                             ; 42    ;
+; Total fan-out                               ; 499   ;
+; Average fan-out                             ; 2.87  ;
++---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
-; |count60                   ; 10 (1)      ; 8            ; 0          ; 9    ; 0            ; 2 (1)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |count60             ; work         ;
-;    |74162:inst2|           ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |count60|74162:inst2 ; work         ;
-;    |74162:inst|            ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |count60|74162:inst  ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                            ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
+; |lab11                     ; 158 (1)     ; 67           ; 0          ; 16   ; 0            ; 91 (1)       ; 24 (0)            ; 43 (0)           ; 46 (0)          ; 0 (0)      ; |lab11                                         ; work         ;
+;    |count24:inst43|        ; 10 (4)      ; 6            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 6 (0)            ; 6 (0)           ; 0 (0)      ; |lab11|count24:inst43                          ; work         ;
+;       |74161:inst1|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 2 (0)           ; 0 (0)      ; |lab11|count24:inst43|74161:inst1              ; work         ;
+;          |f74161:sub|      ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 2 (2)           ; 0 (0)      ; |lab11|count24:inst43|74161:inst1|f74161:sub   ; work         ;
+;       |74161:inst|         ; 4 (0)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |lab11|count24:inst43|74161:inst               ; work         ;
+;          |f74161:sub|      ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |lab11|count24:inst43|74161:inst|f74161:sub    ; work         ;
+;    |count60:inst36|        ; 12 (3)      ; 8            ; 0          ; 0    ; 0            ; 4 (3)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst36                          ; work         ;
+;       |74160:inst1|        ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst36|74160:inst1              ; work         ;
+;       |74160:inst|         ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst36|74160:inst               ; work         ;
+;    |count60:inst37|        ; 12 (3)      ; 8            ; 0          ; 0    ; 0            ; 4 (3)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst37                          ; work         ;
+;       |74160:inst1|        ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst37|74160:inst1              ; work         ;
+;       |74160:inst|         ; 5 (5)       ; 4            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |lab11|count60:inst37|74160:inst               ; work         ;
+;    |display:inst285|       ; 29 (13)     ; 3            ; 0          ; 0    ; 0            ; 26 (13)      ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|display:inst285                         ; work         ;
+;       |7449:inst4|         ; 7 (7)       ; 0            ; 0          ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|display:inst285|7449:inst4              ; work         ;
+;       |sel:inst123|        ; 9 (0)       ; 3            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|display:inst285|sel:inst123             ; work         ;
+;          |74138:inst2|     ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |lab11|display:inst285|sel:inst123|74138:inst2 ; work         ;
+;          |74162:inst|      ; 3 (3)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |lab11|display:inst285|sel:inst123|74162:inst  ; work         ;
+;    |div:inst|              ; 94 (94)     ; 42           ; 0          ; 0    ; 0            ; 52 (52)      ; 24 (24)           ; 18 (18)          ; 40 (40)         ; 0 (0)      ; |lab11|div:inst                                ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                 ;
++-------------------------------------------+----------------------------------------+
+; Register name                             ; Reason for Removal                     ;
++-------------------------------------------+----------------------------------------+
+; display:inst285|sel:inst123|74162:inst|46 ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1     ;                                        ;
++-------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -203,14 +244,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 67    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count24:inst43|74161:inst ;
++------------------------+-------+---------------------------------------+
+; Parameter Name         ; Value ; Type                                  ;
++------------------------+-------+---------------------------------------+
+; DEVICE_FAMILY          ; MAX V ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON    ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF   ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON    ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF   ; IGNORE_CASCADE                        ;
++------------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count24:inst43|74161:inst1 ;
++------------------------+-------+----------------------------------------+
+; Parameter Name         ; Value ; Type                                   ;
++------------------------+-------+----------------------------------------+
+; DEVICE_FAMILY          ; MAX V ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON    ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF   ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON    ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF   ; IGNORE_CASCADE                         ;
++------------------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -219,26 +288,61 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri May 17 18:10:02 2019
+    Info: Processing started: Fri May 24 18:54:28 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab11 -c lab11
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file seg.v
+    Info (12023): Found entity 1: seg
 Info (12021): Found 1 design units, including 1 entities, in source file div.v
     Info (12023): Found entity 1: div
 Info (12021): Found 1 design units, including 1 entities, in source file lab11.bdf
     Info (12023): Found entity 1: lab11
 Info (12021): Found 1 design units, including 1 entities, in source file count60.bdf
     Info (12023): Found entity 1: count60
-Info (12127): Elaborating entity "count60" for the top level hierarchy
-Info (12128): Elaborating entity "74162" for hierarchy "74162:inst"
-Info (12130): Elaborated megafunction instantiation "74162:inst"
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 454 megabytes
-    Info: Processing ended: Fri May 17 18:10:02 2019
-    Info: Elapsed time: 00:00:00
+Info (12021): Found 1 design units, including 1 entities, in source file count24.bdf
+    Info (12023): Found entity 1: count24
+Info (12021): Found 1 design units, including 1 entities, in source file display.bdf
+    Info (12023): Found entity 1: display
+Info (12021): Found 1 design units, including 1 entities, in source file sel.bdf
+    Info (12023): Found entity 1: sel
+Info (12127): Elaborating entity "lab11" for the top level hierarchy
+Info (12128): Elaborating entity "display" for hierarchy "display:inst285"
+Info (12128): Elaborating entity "7449" for hierarchy "display:inst285|7449:inst4"
+Info (12130): Elaborated megafunction instantiation "display:inst285|7449:inst4"
+Info (12128): Elaborating entity "74244" for hierarchy "display:inst285|74244:inst"
+Info (12130): Elaborated megafunction instantiation "display:inst285|74244:inst"
+Info (12128): Elaborating entity "sel" for hierarchy "display:inst285|sel:inst123"
+Info (12128): Elaborating entity "74138" for hierarchy "display:inst285|sel:inst123|74138:inst2"
+Info (12130): Elaborated megafunction instantiation "display:inst285|sel:inst123|74138:inst2"
+Info (12128): Elaborating entity "74162" for hierarchy "display:inst285|sel:inst123|74162:inst"
+Info (12130): Elaborated megafunction instantiation "display:inst285|sel:inst123|74162:inst"
+Info (12128): Elaborating entity "div" for hierarchy "div:inst"
+Warning (10230): Verilog HDL assignment warning at div.v(16): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at div.v(30): truncated value with size 32 to match size of target (24)
+Info (12128): Elaborating entity "count60" for hierarchy "count60:inst36"
+Info (12128): Elaborating entity "74160" for hierarchy "count60:inst36|74160:inst"
+Info (12130): Elaborated megafunction instantiation "count60:inst36|74160:inst"
+Info (12128): Elaborating entity "count24" for hierarchy "count24:inst43"
+Info (12128): Elaborating entity "74161" for hierarchy "count24:inst43|74161:inst"
+Info (12130): Elaborated megafunction instantiation "count24:inst43|74161:inst"
+Info (12128): Elaborating entity "f74161" for hierarchy "count24:inst43|74161:inst|f74161:sub"
+Info (12131): Elaborated megafunction instantiation "count24:inst43|74161:inst|f74161:sub", which is child of megafunction instantiation "count24:inst43|74161:inst"
+Info (12128): Elaborating entity "74161" for hierarchy "count24:inst43|74161:inst1"
+Info (12130): Elaborated megafunction instantiation "count24:inst43|74161:inst1"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node feeding "display:inst285|7449:inst4|49" into a selector
+    Warning (13048): Converted tri-state node feeding "display:inst285|7449:inst4|45" into a selector
+    Warning (13048): Converted tri-state node feeding "display:inst285|7449:inst4|45" into a selector
+    Warning (13048): Converted tri-state node feeding "display:inst285|7449:inst4|45" into a selector
+Info (18008): Converted 2 single input CARRY primitives to CARRY_SUM primitives
+Info (21057): Implemented 174 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 158 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 446 megabytes
+    Info: Processing ended: Fri May 24 18:54:29 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

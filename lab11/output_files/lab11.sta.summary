@@ -2,27 +2,131 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Setup '74162:inst|43'
-Slack : -8.051
-TNS   : -22.650
+Type  : Setup 'pin7'
+Slack : -19.482
+TNS   : -574.623
 
-Type  : Setup 'clk'
-Slack : -4.839
-TNS   : -12.648
+Type  : Setup 'count60:inst37|74160:inst1|7'
+Slack : -9.558
+TNS   : -32.750
 
-Type  : Hold 'clk'
-Slack : -1.595
-TNS   : -1.595
+Type  : Setup 'strat'
+Slack : -7.919
+TNS   : -25.105
 
-Type  : Hold '74162:inst|43'
-Slack : 3.413
+Type  : Setup 'count60:inst36|74160:inst1|7'
+Slack : -6.696
+TNS   : -20.633
+
+Type  : Setup 'div:inst|clk1'
+Slack : -4.843
+TNS   : -14.113
+
+Type  : Setup 'count60:inst36|74160:inst|6'
+Slack : -4.671
+TNS   : -16.012
+
+Type  : Setup 'count60:inst37|74160:inst|6'
+Slack : -4.622
+TNS   : -16.082
+
+Type  : Setup 'count24:inst43|74161:inst1|f74161:sub|87'
+Slack : -4.601
+TNS   : -4.601
+
+Type  : Hold 'strat'
+Slack : -8.216
+TNS   : -27.806
+
+Type  : Hold 'count60:inst36|74160:inst|6'
+Slack : -7.218
+TNS   : -18.223
+
+Type  : Hold 'count60:inst36|74160:inst1|7'
+Slack : -6.537
+TNS   : -21.102
+
+Type  : Hold 'count60:inst37|74160:inst|6'
+Slack : -5.781
+TNS   : -13.848
+
+Type  : Hold 'pin7'
+Slack : -1.067
+TNS   : -1.067
+
+Type  : Hold 'count60:inst37|74160:inst1|7'
+Slack : -0.457
+TNS   : -0.457
+
+Type  : Hold 'div:inst|clk1'
+Slack : 3.401
 TNS   : 0.000
 
-Type  : Minimum Pulse Width 'clk'
+Type  : Hold 'count24:inst43|74161:inst1|f74161:sub|87'
+Slack : 5.241
+TNS   : 0.000
+
+Type  : Recovery 'count60:inst36|74160:inst|6'
+Slack : -6.935
+TNS   : -27.740
+
+Type  : Recovery 'count60:inst37|74160:inst|6'
+Slack : -6.925
+TNS   : -27.700
+
+Type  : Recovery 'count60:inst37|74160:inst1|7'
+Slack : -6.784
+TNS   : -27.136
+
+Type  : Recovery 'count24:inst43|74161:inst1|f74161:sub|87'
+Slack : 3.506
+TNS   : 0.000
+
+Type  : Removal 'count60:inst36|74160:inst|6'
+Slack : -4.303
+TNS   : -17.212
+
+Type  : Removal 'count24:inst43|74161:inst1|f74161:sub|87'
+Slack : -3.366
+TNS   : -3.366
+
+Type  : Removal 'count60:inst37|74160:inst|6'
+Slack : -2.866
+TNS   : -11.464
+
+Type  : Removal 'count60:inst37|74160:inst1|7'
+Slack : 6.755
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pin7'
 Slack : -2.289
 TNS   : -2.289
 
-Type  : Minimum Pulse Width '74162:inst|43'
+Type  : Minimum Pulse Width 'strat'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'count24:inst43|74161:inst1|f74161:sub|87'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'count60:inst36|74160:inst1|7'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'count60:inst36|74160:inst|6'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'count60:inst37|74160:inst1|7'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'count60:inst37|74160:inst|6'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'div:inst|clk1'
 Slack : 0.161
 TNS   : 0.000
 

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri May 17 18:10:04 2019
+Fitter Status : Successful - Fri May 24 18:54:31 2019
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : lab11
-Top-level Entity Name : count60
+Top-level Entity Name : lab11
 Family : MAX V
 Device : 5M160ZE64C5
 Timing Models : Final
-Total logic elements : 10 / 160 ( 6 % )
-Total pins : 9 / 54 ( 17 % )
+Total logic elements : 148 / 160 ( 93 % )
+Total pins : 16 / 54 ( 30 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
